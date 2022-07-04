@@ -354,7 +354,8 @@ button {
     }
     .servicios__fotos--img {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
     .servicios__content article h1.staff {
         font-size: 15px;
@@ -418,9 +419,9 @@ button {
     .servicios__fotos--img article {
         padding: 10px;
     }
-    .servicios__fotos--img {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
+    .servicios__fotos--img article {
+        padding: 10px;
     }
 
     .servicios__content article h1.staff {
