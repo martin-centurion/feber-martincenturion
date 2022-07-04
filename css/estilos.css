@@ -144,6 +144,11 @@ main {
 
 .servicios__content article {
     margin: 40px;
+    transition: transform 0.3s;
+}
+
+.servicios__content article:hover {
+    transform: translateY(-15px);
 }
 
 .servicios__content article img {
