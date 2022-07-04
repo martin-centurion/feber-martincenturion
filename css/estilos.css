@@ -109,6 +109,7 @@ main {
     background-color: rgba(231, 66, 60, 1);
     border: solid 2px rgba(231, 66, 60, 1);
     padding: 10px 30px;
+    transition: background-color 0.3s;
 }
 
 .banner__content--boton a:hover {
@@ -128,7 +129,8 @@ main {
 }
 
 .main--title {
-    background-color: rgba(42, 44, 59, 1);
+    background-image: linear-gradient(45deg, #2a2c3b, #2a3168);
+    border-radius: 10px 0 10px;
     margin-top: 60px;
     padding: 20px;
     width: 400px;
@@ -143,12 +145,17 @@ main {
 }
 
 .servicios__content article {
-    margin: 40px;
-    transition: transform 0.3s;
+    margin: 10px;
+    padding: 30px;
+    transition: transform 0.6s;
 }
 
 .servicios__content article:hover {
     transform: translateY(-15px);
+    background-color: rgba(42, 44, 59, 0.1);
+    border-radius: 10px 0 10px;
+    padding: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
 }
 
 .servicios__content article img {
@@ -200,6 +207,7 @@ main {
     background-color: rgba(42, 44, 59, 1);
     border: solid 2px rgba(42, 44, 59, 1);
     padding: 10px;
+    transition: background-color 0.3s;
 }
 
 .servicios__content a:hover {
