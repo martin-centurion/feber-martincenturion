@@ -163,6 +163,15 @@ main {
     margin-bottom: 40px;
 }
 
+.servicios__fotos {
+}
+
+.servicios__fotos--img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+
 .servicios__content article h1.staff {
     color: rgba(231, 66, 60, 1);
     text-align: left;
