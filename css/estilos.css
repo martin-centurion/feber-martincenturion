@@ -349,7 +349,13 @@ button {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    
+    .servicios__fotos--img article {
+        padding: 10px;
+    }
+    .servicios__fotos--img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .servicios__content article h1.staff {
         font-size: 15px;
         margin-bottom: 5px;
@@ -409,6 +415,14 @@ button {
         margin-top: 30px;
         text-align: center;
     }
+    .servicios__fotos--img article {
+        padding: 10px;
+    }
+    .servicios__fotos--img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .servicios__content article h1.staff {
         text-align: center;
         margin-bottom: 5px;
@@ -417,7 +431,7 @@ button {
         text-align: center;
         margin-bottom: 10px;
     }
-    
+
     .footer__content {
         flex-direction: column;
         justify-content: flex-end;
@@ -446,6 +460,11 @@ button {
     }
     .banner__content--img img {
         margin-top: 20px;
+    }
+
+    .servicios__fotos--img {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .main--title {
