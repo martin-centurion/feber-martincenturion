@@ -163,9 +163,6 @@ main {
     margin-bottom: 40px;
 }
 
-.servicios__fotos {
-}
-
 .servicios__fotos--img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
