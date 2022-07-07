@@ -4,83 +4,114 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../css/estilos.css"/>
+    <!-- <link rel="stylesheet" href="./css/estilos.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
-    <title>Feber - Nuestro Staff</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/> -->
+    <title>Sobre nosotros</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/estilos-boots.css">
 </head>
 <body>
-    <header class="header">
-            <div class="header__content container">
-                <a href="../index.html"><img src="../assets/feber-logo.png" alt="Feber Logo"/></a>
-                <nav class="navbar__content">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+    <header class="bg-primary bg-gradient">
+        <nav class="navbar navbar-expand-md">
+                <div class="container py-4">
+                  <a class="navbar-brand" href="#""><img src="../assets/feber-logo-footer.png" alt="Feber Logo"/></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse align-text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="./servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="./sobre-nosotros.html">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                </nav>
-            </div>
+                  </div>
+                </div>
+        </nav>
     </header>
     <main>
-        <section class="banner container">
-            <div class="banner__content">
-                <div>
-                    <h1>Nuestro Staff</h1>
-                    <p>Estamos conformados por un equipo deprofesionales y técnicos matriculados, con una amplia experiencia en los rubros de mantenimientos e instalación ya mencionados.</p>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="align-text-bottom">
+                        <h1 class="text-primary mb-3 display-1">Nuestro Staff</h1>
+                        <p class="lh-lg mb-5">Estamos conformados por un equipo deprofesionales y técnicos matriculados, con una amplia experiencia en los rubros de mantenimientos e instalación ya mencionados.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-outline-success" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1rem;" href="" role="button">WhatsApp</a>
+                    </div>
                 </div>
-                <div class="banner__content--boton">
-                    <a href="./pages/contacto.html">Consultar</a>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="../assets/banner-nosotros.png" class="img-fluid" alt="Feber Servicios Banner"/>
                 </div>
-            </div>
-            <div class="banner__content--img">
-                <img src="../assets/banner-nosotros.png" alt="Feber - Nuestro Equipo"/>
             </div>
         </section>
-        <section class="nosotros container">
-            <div class="main--title">
-                <p>Nuestro Staff</p>
+        <section class="container">
+            <div class="main--title my-5 p-3">
+                <p class="h4 text-start">Nuestro Staff</p>
             </div>
-            <div class="servicios__content">
-                <article>
-                    <img src="../assets/staff1.png" alt="Feber Electricidad Icono"/>
-                    <h1 class="staff">Nahuel Berdugo</h1>
-                    <p class="staff--parrafo">Electricista matriculado.</p>
-                </article>
-                <article>
-                    <img src="../assets/staff1.png" alt="Feber Electricidad Icono"/>
-                    <h1 class="staff">Ezequiel Berdugo</h1>
-                    <p class="staff--parrafo">Gasista, Refrigeración y Plomería</p>
-                </article>
-                <article>
-                    <img src="../assets/staff1.png" alt="Feber Electricidad Icono"/>
-                    <h1 class="staff">Daniel Ferreyra</h1>
-                    <p class="staff--parrafo">Maestro Mayor de Obra - Gasista Matriculado</p>
-                  </article>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <article>
+                        <img src="../assets/staff1.png" alt="Feber Electricidad Icono"/>
+                        <h1 class="staff">Nahuel Berdugo</h1>
+                        <p class="staff--parrafo">Electricista matriculado.</p>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <article>
+                        <img src="../assets/staff1.png" alt="Feber Electricidad Icono"/>
+                        <h1 class="staff">Ezequiel Berdugo</h1>
+                        <p class="staff--parrafo">Gasista, Refrigeración y Plomería</p>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <article>
+                        <img src="../assets/staff1.png" alt="Feber Electricidad Icono"/>
+                        <h1 class="staff">Daniel Ferreyra</h1>
+                        <p class="staff--parrafo">Maestro Mayor de Obra - Gasista Matriculado</p>
+                    </article>
+                </div>
             </div>
         </section>
         
     </main>
-    <footer>
-        <section class="footer container">
-            <div class="footer__content">
-                <div class="footer__content--img">
+    <footer class="bg-dark bg-gradient">
+        <div class="container py-4">
+            <div class="row py-5">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <a href="../index.html"><img src="../assets/feber-logo-footer.png" alt="Feber Logo Footer"/></a>
                 </div>
-                <div>
-                    <nav class="navbar__footer">
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="./servicios.html">Servicios</a></li>
-                            <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
+                <div class="col-sm-12 col-md-4 col-lg-4 py-sm-4 py-md-0 py-lg-0">
+                    <h4 class="text-white pb-sm-3">Navbar</h4>
+                    <ul class="list-unstyle">
+                        <li><a href="../index.html" class="text-white">Inicio</a></li>
+                        <li><a href="./servicios.html" class="text-white">Servicios</a></li>
+                        <li><a href="./sobre-nosotros.html" class="text-white">Sobre nosotros</a></li>
+                        <li><a href="./contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h4 class="text-white pb-3">Social media</h4>
+                    <a href=""><i class="bi bi-instagram text-white"></i></a>
+                    <a href=""><i class="bi bi-facebook text-white px-4"></i></a>
+                    <a href=""><i class="bi bi-whatsapp text-white"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
     </footer>
     
 </body>
