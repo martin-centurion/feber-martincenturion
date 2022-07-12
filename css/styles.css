@@ -225,7 +225,12 @@ button {
   .container {
     width: 900px; }
   .banner__content {
-    margin: 20px 0 10px 0; }
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: flex-end; }
+    .banner__content img {
+      margin: auto;
+      width: 80%; }
   .header__content {
     display: flex;
     flex-flow: column wrap; }
@@ -249,7 +254,9 @@ button {
     .header__content ul {
       margin-bottom: 10px; }
   .banner__content {
-    margin: 20px 0 10px 0; }
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: flex-end; }
   .servicios__content {
     display: grid;
     grid-template-columns: 1fr;
@@ -276,6 +283,12 @@ button {
   .servicios__content {
     display: flex;
     flex-flow: column wrap; }
+    .servicios__content-title {
+      width: 300px; }
   .footer__content {
     display: flex;
-    flex-flow: column wrap; } }
+    flex-flow: column wrap; }
+  .formulario input {
+    width: 300px; }
+  .formulario textarea {
+    width: 300px; } }
