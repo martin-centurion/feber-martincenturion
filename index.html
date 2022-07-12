@@ -4,24 +4,35 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./css/estilos.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
     <title>Feber Servicios</title>
+    <script src="https://kit.fontawesome.com/521306ceec.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <div class="header__content container">
-            <a href="./index.html"><img src="./assets/feber-logo.png" alt="Feber Logo"/></a>
-            <nav class="navbar__content">
+            <div>
+                <a href="./index.html"><img src="./assets/feber-logo.png" alt="Feber Logo"/></a>
+            </div>
+            <div>
+                <nav class="header__content-navbar">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./pages/servicios.html">Servicios</a></li>
+                        <li><a href="./pages/sobre-nosotros.html">Nosotros</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
                 <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -30,21 +41,20 @@
                 <div>
                     <h1>Bienvenidos.</h1>
                     <h2>Servicios integrales de mantenimiento y construcción.</h2>
-                    <p>Somos una Empresa que ofrece servicios al mercado de la Construcción y 
-                        Mantenimiento en general. 
+                    <p>Somos una Empresa que ofrece servicios al mercado de la <span>Construcción y 
+                        Mantenimiento</span> en general. 
                     Realizamos asistencia domiciliaria para compañías de seguros, 
                     empresas, consorcios, barrios cerrados y particulares.</p>
-                </div>
-                <div class="banner__content--boton">
                     <a href="./pages/contacto.html">Consultar</a>
+                    <a href="">WhatsApp</a>
                 </div>
-            </div>
-            <div class="banner__content--img">
-                <img src="./assets/banner.png" alt="Feber Servicios Banner"/>
+                <div class="banner__content-img">
+                    <img src="./assets/banner.png" alt="Feber Servicios Banner"/>
+                </div>
             </div>
         </section>
         <section class="servicios container">
-            <div class="main--title">
+            <div class="servicios__content-title">
                 <p>Nuestros Servicios</p>
             </div>
             <div class="servicios__content">
@@ -68,11 +78,11 @@
                 </article>
             </div>
         </section>
-        <section class="servicios__fotos container">
-            <div class="main--title">
+        <section class="servicios container">
+            <div class="servicios__content-title">
                 <p>¿Cómo trabajamos?</p>
             </div>
-            <div class="servicios__fotos--img">
+            <div class="servicios__content">
                 <article>
                     <img src="./assets/imguno.jpg" alt="Feber - Foto de como trabajamos"/>
                 </article>
@@ -84,37 +94,37 @@
                 </article>
             </div>
         </section>
-        <section class="nosotros container">
-            <div class="main--title">
+        <section class="container">
+            <div class="servicios__content-title">
                 <p>Nuestro Staff</p>
             </div>
             <div class="servicios__content">
                 <article>
                     <img src="./assets/staff1.png" alt="Feber Electricidad Icono"/>
-                    <h1 class="staff">Nahuel Berdugo</h1>
-                    <p class="staff--parrafo">Electricista matriculado.</p>
+                    <h1>Nahuel Berdugo</h1>
+                    <p>Electricista matriculado.</p>
                 </article>
                 <article>
                     <img src="./assets/staff1.png" alt="Feber Electricidad Icono"/>
-                    <h1 class="staff">Ezequiel Berdugo</h1>
-                    <p class="staff--parrafo">Gasista, Refrigeración y Plomería</p>
+                    <h1>Ezequiel Berdugo</h1>
+                    <p>Gasista, Refrigeración y Plomería</p>
                 </article>
                 <article>
                     <img src="./assets/staff1.png" alt="Feber Electricidad Icono"/>
-                    <h1 class="staff">Daniel Ferreyra</h1>
-                    <p class="staff--parrafo">Maestro Mayor de Obra - Gasista Matriculado</p>
+                    <h1>Daniel Ferreyra</h1>
+                    <p>Maestro Mayor de Obra - Gasista Matriculado</p>
                   </article>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer container">
+    <footer class="footer">
+        <div class="container">
             <div class="footer__content">
-                <div class="footer__content--img">
+                <div class="footer__content-logo">
                     <a href="./index.html"><img src="./assets/feber-logo-footer.png" alt="Feber Logo Footer"/></a>
                 </div>
                 <div>
-                    <nav class="navbar__footer">
+                    <nav class="footer__content-navbar">
                         <ul>
                             <li><a href="./index.html">Inicio</a></li>
                             <li><a href="./pages/servicios.html">Servicios</a></li>
@@ -122,6 +132,12 @@
                             <li><a href="./pages/contacto.html">Contacto</a></li>
                         </ul>
                     </nav>
+                </div>
+                <div class="footer__content-rrss">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
