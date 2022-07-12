@@ -1,0 +1,22 @@
+{
+  "name": "feber",
+  "version": "1.0.0",
+  "description": "sitio web feber",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-centurion/feber-martincenturion.git"
+  },
+  "author": "martin centurion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-centurion/feber-martincenturion/issues"
+  },
+  "homepage": "https://github.com/martin-centurion/feber-martincenturion#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
