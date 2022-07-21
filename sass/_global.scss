@@ -23,3 +23,19 @@ span {
 footer {
     background-color: $ColorSecundario;
 }
+
+$redesSociales: (
+    facebook: $ColorSecundario,
+    instagram: $ColorSecundario, 
+);
+
+@each $nombre, $color in $redesSociales {
+    .link-#{$nombre} {
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        background-color: $color;
+        }
+}

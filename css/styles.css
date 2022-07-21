@@ -19,6 +19,22 @@ span {
 footer {
   background-color: #e7423c; }
 
+.link-facebook {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #e7423c; }
+
+.link-instagram {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #e7423c; }
+
 .header {
   background-color: #2a2c3b;
   padding: 20px;
@@ -71,20 +87,49 @@ footer {
       margin-bottom: 30px;
       letter-spacing: 1.5px;
       line-height: 30px; }
-    .banner__content a {
-      color: white;
-      font-size: 14px;
-      text-align: center;
-      font-weight: 400;
-      border-radius: 5px;
-      background-color: #e7423c;
-      border: solid 2px #e7423c;
-      padding: 10px 30px;
-      transition: all 0.5s; }
-      .banner__content a:hover {
-        color: #2a2c3b;
-        background-color: white;
-        border: solid 2px #2a2c3b; }
+
+.btn-base, .btn-principal, .btn-whatsapp {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 10px 30px;
+  transition: all 0.5s; }
+
+.btn-principal {
+  background-color: #2a2c3b;
+  border: solid 2px #2a2c3b; }
+  .btn-principal:hover {
+    background-color: #e7423c;
+    border: solid 2px #e7423c; }
+
+.btn-whatsapp {
+  background-color: #1dd639;
+  border: solid 2px #1dd639; }
+  .btn-whatsapp:hover {
+    color: #1dd639;
+    background-color: white;
+    border: solid 2px #1dd639; }
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px; }
+  .card .card-1 {
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    color: #e7423c;
+    border-radius: 10px;
+    background-color: #2a2c3b; }
+  .card .card-2 {
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #1dd639; }
 
 .servicios {
   margin-top: 80px; }
@@ -111,20 +156,6 @@ footer {
       padding: 30px;
       text-align: center;
       transition: all 0.6s; }
-      .servicios__content article a {
-        color: white;
-        font-size: 14px;
-        text-align: center;
-        border-radius: 7px;
-        font-weight: 400;
-        background-color: #2a2c3b;
-        border: solid 2px #2a2c3b;
-        padding: 10px;
-        transition: background-color 0.3s; }
-        .servicios__content article a:hover {
-          color: #e7423c;
-          background-color: white;
-          border: solid 2px #e7423c; }
       .servicios__content article:hover {
         transform: translateY(-15px);
         background-color: rgba(42, 44, 59, 0.1);

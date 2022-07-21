@@ -30,23 +30,62 @@
                 letter-spacing: 1.5px;
                 line-height: 30px;
             }
-            a {
-                color: white;
-                font-size: 14px;
-                text-align: center;
-                font-weight: 400;
-                border-radius: 5px;
-                background-color: $ColorSecundario;
-                border: solid 2px $ColorSecundario;
-                padding: 10px 30px;
-                transition: all 0.5s;
+    }
+}
 
-                    &:hover {
-                            color: rgba(42, 44, 59, 1);
-                            background-color: white;
-                            border: solid 2px $ColorPrimario;
-            }
+.btn-base {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: all 0.5s;
+}
+
+.btn-principal {
+    @extend .btn-base;
+    background-color: $ColorPrimario;
+    border: solid 2px $ColorPrimario;
+
+        &:hover {
+            background-color: $ColorSecundario;
+            border: solid 2px $ColorSecundario;
+         }
+}
+
+.btn-whatsapp {
+    @extend.btn-base;
+    background-color: $ColorWhatsapp;
+    border: solid 2px $ColorWhatsapp;
+
+        &:hover {
+            color: $ColorWhatsapp;
+            background-color: white;
+            border: solid 2px $ColorWhatsapp;
         }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+
+    @mixin card-base ($ColorTitulo, $fondo){
+        margin: 20px;
+        padding: 50px;
+        text-align: center;
+        color: $ColorTitulo;
+        border-radius: 10px;
+        background-color: $fondo;
+    }
+    
+    .card-1 {
+        @include card-base ($ColorSecundario, $ColorPrimario);
+    }
+    
+    .card-2 {
+        @include card-base (white, $ColorWhatsapp);
     }
 }
 
@@ -84,24 +123,6 @@
                     padding: 30px;
                     text-align: center;
                     transition: all 0.6s;
-
-                        a {
-                            color: white;
-                            font-size: 14px;
-                            text-align: center;
-                            border-radius: 7px;
-                            font-weight: 400;
-                            background-color: $ColorPrimario;
-                            border: solid 2px $ColorPrimario;
-                            padding: 10px;
-                            transition: background-color 0.3s;
-
-                                &:hover {
-                                    color: $ColorSecundario;
-                                    background-color: white;
-                                    border: solid 2px $ColorSecundario;
-                                        }
-                        }
             
                 &:hover {
                     transform: translateY(-15px);
